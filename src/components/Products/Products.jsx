@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { fetchProducts } from '../../api/fetchProducts';
 import './_Products.scss';
+import { ProductCard } from '../ProductCard/ProductCard';
 
 export const Products = () => {
     const [products, setProducts] = useState([]);
@@ -17,7 +18,8 @@ export const Products = () => {
 
     return (
         <section className="products">
-            {products && products.map(product => <p key={product.id}>{product.title}</p>)}
+            {products &&
+                products.map(product => <ProductCard key={product.id} product={product} />)}
         </section>
     );
 };
