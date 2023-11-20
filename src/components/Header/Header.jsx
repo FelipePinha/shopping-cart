@@ -7,7 +7,7 @@ export const Header = () => {
             <div className="container">
                 <h1>Store</h1>
                 <button className="cart-btn">
-                    <ShoppingCartSimple size={50} />
+                    <ShoppingCartSimple size={40} />
                     <span className="cart-status">1</span>
                 </button>
             </div>
