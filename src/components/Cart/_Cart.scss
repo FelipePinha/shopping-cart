@@ -7,12 +7,17 @@
     height: 100vh;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -100%;
     padding: 10rem 2rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     z-index: 2;
+    transition: all 0.2s ease;
+}
+
+.cart-active {
+    right: 0;
 }
 
 .cart-items {
