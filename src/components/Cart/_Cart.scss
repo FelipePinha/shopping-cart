@@ -1,0 +1,29 @@
+@import '../../styles/theme';
+
+.cart {
+    width: 100%;
+    max-width: 32rem;
+    background-color: #fff;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.cart-items {
+    flex-grow: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.cart-value {
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 3.5rem 0 1.5rem;
+    border-top: 0.1rem solid $white;
+}
