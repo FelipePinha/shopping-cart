@@ -1,8 +1,7 @@
 import { fetchProd } from './axios';
 
 export const fetchProducts = async () => {
-    const res = await fetchProd.get('/products');
-    const data = await res.json();
+    const res = await fetchProd.get('https://fakestoreapi.com/products?limit=10');
 
-    return data;
+    return res.data;
 };
