@@ -1,0 +1,36 @@
+@import '../../styles/theme';
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: $yellow;
+    height: 8rem;
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.cart-btn {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-btn > .cart-status {
+    background-color: $red;
+    color: $white;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    font-weight: 700;
+}
